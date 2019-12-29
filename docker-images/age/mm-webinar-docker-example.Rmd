@@ -1,0 +1,70 @@
+---
+title: "Dockerizing a simple model for the multiple myeloma Challenge"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This demo describes how to Dockerize a very simple prediction model for the multiple myeloma Challenge.  The model simply uses patient age as the (continuous) prediction score and dichotomizes age based on a threshold, such that a patient whose age exceeds the cutoff is defined as being high risk.
+
+We will submit this model to Sub-Challenge 1, which asks us to predict patient risk using only genomic and clinical data.  In this case, we will ignore genomic data and simply use age to make our prediction.
+
+# Train your model
+
+Begin by implementing and training your model.  You will need to store any trained state so that it can accessed during the validation phase (i.e., from within the Docker image).
+
+In our trivial example, the only "trained" state will be the age cutoff to apply during the validation phase.  Here is our code to create that state.
+
+```{bash}
+cat train-mm-sc1.R
+```
+
+Execute the above script to generate the metadata file `model-state-metadata.Rd` that will hold this state:
+
+```{bash}
+./train-mm-sc1.R
+```
+
+# Write the code to execute your model against validation data
+
+Our trivial model will simply read in the clinical annotation data for Sub-Challenge 1.  This file provides the patient names and the associated study for each patient.  The code then accesses the metadata file `model-state-metadata.Rd` to read the age cutoff, applies that cutoff to each patient's age to make predictions, and stores the predictions in `/output/predictions.tsv`.
+
+```{bash}
+cat run-mm-sc1.R
+```
+
+The entry point for our model must be an executable bash script called `score_sc1.sh` since we are submitting to Sub-Challenge 1.  It simply invokes the R implementation of our model.
+
+```{bash}
+cat score_sc1.sh
+```
+
+Make sure the script is executable:
+
+```{bash}
+chmod 700 score_sc1.sh
+```
+
+# Create a Dockerfile
+
+The `Dockerfile` installs the external dependencies required by your model code (i.e., the R libraries `data.table` and `plyr`.  It also copies any local files into the Docker image required to run out model (i.e., the model implementation in `run-mm-sc1.R`, the model entry point in `score_sc1.sh`, and the model metadata in `model-state-metadata.Rd`).  Note that it needs to be named `Dockerfile`.  
+
+```{bash}
+cat Dockerfile
+```
+
+# Build the Docker image
+
+```{bash}
+docker build -t docker.synapse.org/syn7237116/age:version1 .
+```
+
+# View available Docker images
+
+```{bash}
+docker images
+```
+
+

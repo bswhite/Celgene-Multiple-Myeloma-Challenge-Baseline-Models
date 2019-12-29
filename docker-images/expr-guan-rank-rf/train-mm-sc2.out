@@ -1,0 +1,75 @@
+Warning message:
+package 'data.table' was built under R version 3.3.2 
+Warning message:
+package 'Matrix.utils' was built under R version 3.3.2 
+Warning messages:
+1: package 'caret' was built under R version 3.3.2 
+2: package 'ggplot2' was built under R version 3.3.2 
+Welcome brian.white!
+Warning message:
+In dir.create(download.dir) : './download' already exists
+..
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  4  335k    4 16360    0     0  15189      0  0:00:22  0:00:01  0:00:21 15190100  335k  100  335k    0     0   231k      0  0:00:01  0:00:01 --:--:--  231k
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  4  335k    4 16360    0     0  30624      0  0:00:11 --:--:--  0:00:11 30579100  335k  100  335k    0     0   370k      0 --:--:-- --:--:-- --:--:--  369k
+Reading in data.set EMTAB4032entrezIDlevel.csv: ./download/EMTAB4032entrezIDlevel.csv
+Reading in data.set GSE19784HOVON65entrezIDlevel.csv: ./download/GSE19784HOVON65entrezIDlevel.csv
+Reading in data.set GSE24080UAMSentrezIDlevel.csv: ./download/GSE24080UAMSentrezIDlevel.csv
+Read 97.5% of 20514 rowsRead 20514 rows and 560 (of 560) columns from 0.181 GB file in 00:00:03
+Reading in data.set MMRF_CoMMpass_IA9_E74GTF_Salmon_Gene_TPM.txt: ./download/MMRF_CoMMpass_IA9_E74GTF_Salmon_Gene_TPM.txt
+Read 17.2% of 57997 rowsRead 51.7% of 57997 rowsRead 86.2% of 57997 rowsRead 57997 rows and 735 (of 735) columns from 0.287 GB file in 00:00:07
+Warning message:
+In process.expression.data.sets(anno.tbl) :
+  Ambiguous mapping between Ensembl ID an Entrez TRANSLATION
+
+1581 of 1625 have all clinical data specified
+"D_Gender"	"D_ISS"	"D_Age"	"D_PFS"	"D_PFS_FLAG"
+"Female"	NA	38.8911704312115	817.4	1
+"Male"	NA	51.0965092402464	552.05	1
+"Male"	NA	57.9219712525667	234.85	1
+"Male"	NA	62.0150581793292	1695.8	0
+"Female"	NA	48.2573579739904	314.15	1
+"Male"	NA	62.8583162217659	972.95	1
+"Female"	NA	61.3826146475017	1162.05	1
+"Female"	NA	56.6406570841889	1165.1	0
+"Male"	NA	64.5585215605749	1210.85	0
+"Female"	NA	62.798083504449	472.75	1
+"Female"	NA	55.917864476386	39.65	1
+"Female"	NA	57.8370978781656	1204.75	0
+"Female"	NA	60.5831622176591	1046.15	0
+"Male"	NA	42.6584531143053	54.9	0
+"Male"	NA	55.4880219028063	448.35	1
+"Male"	NA	49.6591375770021	198.25	1
+"Male"	NA	49.533196440794	207.4	1
+"Female"	NA	76	2958.5	1
+"Male"	NA	65	725.9	1
+"Female"	NA	63	759.45	1
+"Female"	NA	75	12.2	1
+"Female"	NA	64	18.3	1
+"Female"	NA	81	609	1
+"Female"	NA	62	440	1
+"Male"	NA	71	880	0
+"Female"	NA	90	343	1
+"Female"	NA	64	719	1
+"Male"	NA	80	231	1
+"Male"	NA	71	589	0
+"Female"	NA	68	776	0
+"Male"	NA	56	729	1
+"Female"	NA	71	519	0
+"Male"	NA	85	425	1
+"Female"	NA	79	261	1
+"Male"	NA	82	1	0
+"Male"	NA	82	212	1
+"Female"	NA	69	457	1
+"Male"	NA	77	460	0
+"Male"	NA	60	378	0
+"Male"	NA	52	209	1
+"Male"	NA	63	120	1
+"Male"	NA	51	275	0
+"Male"	NA	63	228	0
+"Male"	NA	70	451.4	1
+Successfully trained model

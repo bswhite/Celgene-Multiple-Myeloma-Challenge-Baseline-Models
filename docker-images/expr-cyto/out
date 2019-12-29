@@ -1,0 +1,426 @@
+Warning message:
+package 'data.table' was built under R version 3.3.2 
+Warning message:
+package 'Matrix.utils' was built under R version 3.3.2 
+Warning messages:
+1: package 'caret' was built under R version 3.3.2 
+2: package 'ggplot2' was built under R version 3.3.2 
+R version 3.3.1 (2016-06-21)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: OS X 10.11.6 (El Capitan)
+
+locale:
+[1] C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  base     
+
+other attached packages:
+[1] randomForest_4.6-12 caret_6.0-76        ggplot2_2.2.1      
+[4] lattice_0.20-34     plyr_1.8.4          Matrix.utils_0.9.5 
+[7] Matrix_1.2-7.1      data.table_1.10.0  
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.9        magrittr_1.5       splines_3.3.1      MASS_7.3-45       
+ [5] munsell_0.4.3      colorspace_1.3-2   foreach_1.4.3      minqa_1.2.4       
+ [9] stringr_1.1.0      car_2.1-4          tools_3.3.1        parallel_3.3.1    
+[13] pbkrtest_0.4-6     nnet_7.3-12        grid_3.3.1         gtable_0.2.0      
+[17] nlme_3.1-128       mgcv_1.8-16        quantreg_5.29      MatrixModels_0.4-1
+[21] iterators_1.0.8    lme4_1.1-12        lazyeval_0.2.0     assertthat_0.1    
+[25] tibble_1.2         nloptr_1.0.4       grr_0.9.5          reshape2_1.4.2    
+[29] ModelMetrics_1.1.0 codetools_0.2-15   stringi_1.1.2      methods_3.3.1     
+[33] scales_0.4.1       stats4_3.3.1       SparseM_1.74      
+Please upgrade to the latest version of the Synapse Client, 1.15-0, by running the following commands:
+	source('http://depot.sagebase.org/CRAN.R')
+	pkgInstall("synapseClient")
+
+Here are this version's release notes:
+https://sagebionetworks.jira.com/issues/?jql=project%20%3D%20SYNR%20AND%20fixVersion%20%3D%20R-1.15-0%20ORDER%20BY%20fixVersion%20ASC%2C%20key%20DESC
+
+
+
+Welcome brian.white!
+Class of trained.rf = randomForest
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0 19  348k   19 69145    0     0  22620      0  0:00:15  0:00:03  0:00:12 22625 73  348k   73  254k    0     0  65806      0  0:00:05  0:00:03  0:00:02 65799100  348k  100  348k    0     0  85382      0  0:00:04  0:00:04 --:--:-- 85395
+$syn10220019
+An object of class "File"
+Synapse Entity Name : sc2_LBRound1_ClinAnnotations.csv
+Synapse Entity Id   : syn10220019
+Parent Id     : syn10219608
+Version Number  : 18
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 6547k    0 16360    0     0   9574      0  0:11:40  0:00:01  0:11:39  9572  1 6547k    1  117k    0     0  43061      0  0:02:35  0:00:02  0:02:33 43047  6 6547k    6  424k    0     0   113k      0  0:00:57  0:00:03  0:00:54  113k 17 6547k   17 1138k    0     0   241k      0  0:00:27  0:00:04  0:00:23  241k 37 6547k   37 2480k    0     0   434k      0  0:00:15  0:00:05  0:00:10  498k 68 6547k   68 4487k    0     0   669k      0  0:00:09  0:00:06  0:00:03  895k 94 6547k   94 6187k    0     0   802k      0  0:00:08  0:00:07  0:00:01 1235k100 6547k  100 6547k    0     0   775k      0  0:00:08  0:00:08 --:--:-- 1299k
+$syn10268548
+An object of class "File"
+Synapse Entity Name : GSE15695entrezIDlevel_LBR1.csv
+Synapse Entity Id   : syn10268548
+Parent Id     : syn10264438
+Version Number  : 7
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn10268550
+An object of class "File"
+Synapse Entity Name : HoseentrezIDlevel_LBR1.csv
+Synapse Entity Id   : syn10268550
+Parent Id     : syn10264438
+Version Number  : 7
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn10268552
+An object of class "File"
+Synapse Entity Name : dfci.2009_entrezID_TPM_hg19_LBR1.csv
+Synapse Entity Id   : syn10268552
+Parent Id     : syn10264438
+Version Number  : 7
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn10268555
+An object of class "File"
+Synapse Entity Name : m2gen_entrezID_TPM_hg19_LBR1.csv
+Synapse Entity Id   : syn10268555
+Parent Id     : syn10264438
+Version Number  : 7
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+Reading in data.set GSE15695entrezIDlevel_LBR1.csv
+nrow of map = 72
+Patient	MA_geneLevelExpFileSamplId
+GSM3927733	GSM3927733
+GSM3927731	GSM3927731
+GSM392775	GSM392775
+GSM3927789	GSM3927789
+GSM3927787	GSM3927787
+GSM3927966	GSM3927966
+GSM3927967	GSM3927967
+GSM3928009	GSM3928009
+GSM3928005	GSM3928005
+GSM392802	GSM392802
+GSM392806	GSM392806
+GSM3928140	GSM3928140
+GSM3928144	GSM3928144
+GSM3928225	GSM3928225
+GSM3928222	GSM3928222
+GSM392839	GSM392839
+GSM392846	GSM392846
+GSM3928611	GSM3928611
+GSM3928618	GSM3928618
+GSM3928614	GSM3928614
+GSM392863	GSM392863
+GSM392870	GSM392870
+GSM392875	GSM392875
+GSM3928769	GSM3928769
+GSM3928767	GSM3928767
+GSM3928787	GSM3928787
+GSM3928784	GSM3928784
+GSM3928789	GSM3928789
+GSM392884	GSM392884
+GSM3928873	GSM3928873
+GSM3928878	GSM3928878
+GSM3928871	GSM3928871
+GSM392888	GSM392888
+GSM392902	GSM392902
+GSM3929042	GSM3929042
+GSM3929045	GSM3929045
+GSM392908	GSM392908
+GSM392916	GSM392916
+GSM392931	GSM392931
+GSM3929328	GSM3929328
+GSM3929326	GSM3929326
+GSM392936	GSM392936
+GSM3929377	GSM3929377
+GSM3929376	GSM3929376
+GSM3929378	GSM3929378
+GSM392945	GSM392945
+GSM392947	GSM392947
+GSM3929584	GSM3929584
+GSM3929585	GSM3929585
+GSM392965	GSM392965
+GSM392970	GSM392970
+GSM3929721	GSM3929721
+GSM3929726	GSM3929726
+GSM3929729	GSM3929729
+GSM392982	GSM392982
+GSM3929836	GSM3929836
+GSM3929839	GSM3929839
+GSM392984	GSM392984
+GSM392986	GSM392986
+GSM3929888	GSM3929888
+GSM3929884	GSM3929884
+GSM3929904	GSM3929904
+GSM3929908	GSM3929908
+GSM3929911	GSM3929911
+GSM3929918	GSM3929918
+GSM3930018	GSM3930018
+GSM3930015	GSM3930015
+GSM3930048	GSM3930048
+GSM3930041	GSM3930041
+GSM3930120	GSM3930120
+GSM3930122	GSM3930122
+GSM393013	GSM393013
+Reading in data.set HoseentrezIDlevel_LBR1.csv
+nrow of map = 84
+Patient	MA_geneLevelExpFileSamplId
+P001	P001
+P002	P002
+P0084	P0084
+P0081	P0081
+P013	P013
+P0235	P0235
+P0232	P0232
+P0242	P0242
+P0249	P0249
+P0245	P0245
+P0254	P0254
+P0256	P0256
+P0251	P0251
+P0258	P0258
+P0250	P0250
+P0315	P0315
+P0318	P0318
+P0313	P0313
+P0312	P0312
+P036	P036
+P0507	P0507
+P0503	P0503
+P054	P054
+P065	P065
+P0669	P0669
+P0667	P0667
+P0695	P0695
+P0696	P0696
+P0699	P0699
+P074	P074
+P081	P081
+P089	P089
+P092	P092
+P104	P104
+P107	P107
+P109	P109
+P1115	P1115
+P1116	P1116
+P1157	P1157
+P1150	P1150
+P1177	P1177
+P1170	P1170
+P128	P128
+P1326	P1326
+P1328	P1328
+P133	P133
+P1385	P1385
+P1380	P1380
+P1440	P1440
+P1446	P1446
+P146	P146
+P1475	P1475
+P1479	P1479
+P148	P148
+P149	P149
+P151	P151
+P152	P152
+P158	P158
+P1591	P1591
+P1595	P1595
+P1598	P1598
+P1709	P1709
+P1702	P1702
+P1748	P1748
+P1745	P1745
+P1744	P1744
+P1756	P1756
+P1757	P1757
+P176	P176
+P181	P181
+P183	P183
+P185	P185
+P195	P195
+P1990	P1990
+P1995	P1995
+P1998	P1998
+P200	P200
+P201	P201
+P2021	P2021
+P2026	P2026
+P2059	P2059
+P2051	P2051
+P212	P212
+P214	P214
+Reading in data.set dfci.2009_entrezID_TPM_hg19_LBR1.csv
+nrow of map = 95
+Patient	RNASeq_geneLevelExpFileSamplId
+001_005AC1	001_005AC1
+001_005AC5	001_005AC5
+001_020PN	001_020PN
+001_034AN	001_034AN
+001_035BD3	001_035BD3
+001_035BD2	001_035BD2
+001_042FA0	001_042FA0
+001_042FA4	001_042FA4
+001_047PF7	001_047PF7
+001_047PF4	001_047PF4
+001_059BV	001_059BV
+004_009BG	004_009BG
+007_003RF	007_003RF
+013_003GL	013_003GL
+017_007VA	017_007VA
+019_004BM5	019_004BM5
+019_004BM0	019_004BM0
+019_030PC3	019_030PC3
+019_030PC6	019_030PC6
+020_002LR	020_002LR
+021_001JC	021_001JC
+024_002DM	024_002DM
+026_008MH	026_008MH
+026_016DS3	026_016DS3
+026_016DS2	026_016DS2
+026_020BM6	026_020BM6
+026_020BM5	026_020BM5
+026_020BM1	026_020BM1
+031_011CH	031_011CH
+033_007NI2	033_007NI2
+033_007NI4	033_007NI4
+034_022VM	034_022VM
+034_029LB	034_029LB
+034_033FJ	034_033FJ
+034_035SE1	034_035SE1
+034_035SE0	034_035SE0
+035_002TC9	035_002TC9
+035_002TC5	035_002TC5
+035_004BD6	035_004BD6
+035_004BD5	035_004BD5
+035_004BD8	035_004BD8
+035_005LG9	035_005LG9
+035_005LG5	035_005LG5
+035_011FP	035_011FP
+035_023CM	035_023CM
+036_001PR	036_001PR
+038_006GJ	038_006GJ
+038_017RA	038_017RA
+038_019CJ3	038_019CJ3
+038_019CJ0	038_019CJ0
+038_019CJ9	038_019CJ9
+038_020FL8	038_020FL8
+038_020FL2	038_020FL2
+044_003BF	044_003BF
+044_013LJ8	044_013LJ8
+044_013LJ6	044_013LJ6
+044_018CH	044_018CH
+044_021GR	044_021GR
+044_022CA9	044_022CA9
+044_022CA7	044_022CA7
+046_005PO	046_005PO
+046_010BE	046_010BE
+046_012CC	046_012CC
+051_005OL9	051_005OL9
+051_005OL1	051_005OL1
+051_005OL2	051_005OL2
+051_005OL4	051_005OL4
+057_007KS	057_007KS
+067_002JG	067_002JG
+068_004BG	068_004BG
+068_007LG	068_007LG
+072_003MA	072_003MA
+091_009BJ7	091_009BJ7
+091_009BJ6	091_009BJ6
+091_009BJ8	091_009BJ8
+091_010SM6	091_010SM6
+091_010SM5	091_010SM5
+091_010SM4	091_010SM4
+091_012GL5	091_012GL5
+091_012GL4	091_012GL4
+091_012GL9	091_012GL9
+091_012GL1	091_012GL1
+091_012GL8	091_012GL8
+091_017SM	091_017SM
+095_001SM	095_001SM
+099_007CF7	099_007CF7
+099_007CF4	099_007CF4
+104_002PS7	104_002PS7
+104_002PS3	104_002PS3
+107_001XX	107_001XX
+128_001XX	128_001XX
+152_009EF	152_009EF
+152_021GA	152_021GA
+154_002GV	154_002GV
+164_004DA	164_004DA
+Reading in data.set m2gen_entrezID_TPM_hg19_LBR1.csv
+nrow of map = 23
+Patient	RNASeq_geneLevelExpFileSamplId
+M2GEN_0003	M2GEN_0003
+M2GEN_0008	M2GEN_0008
+M2GEN_0014	M2GEN_0014
+M2GEN_0017	M2GEN_0017
+M2GEN_0038	M2GEN_0038
+M2GEN_00398	M2GEN_00398
+M2GEN_00399	M2GEN_00399
+M2GEN_00390	M2GEN_00390
+M2GEN_0042	M2GEN_0042
+M2GEN_00451	M2GEN_00451
+M2GEN_00458	M2GEN_00458
+M2GEN_00524	M2GEN_00524
+M2GEN_00526	M2GEN_00526
+M2GEN_00529	M2GEN_00529
+M2GEN_0063	M2GEN_0063
+M2GEN_00744	M2GEN_00744
+M2GEN_00740	M2GEN_00740
+M2GEN_00809	M2GEN_00809
+M2GEN_00805	M2GEN_00805
+M2GEN_00803	M2GEN_00803
+M2GEN_01026	M2GEN_01026
+M2GEN_01029	M2GEN_01029
+M2GEN_0111	M2GEN_0111
+1. GSE15695entrezIDlevel_LBR1.csv map: 72
+2. GSE15695entrezIDlevel_LBR1.csv map: 72
+3. GSE15695entrezIDlevel_LBR1.csv map: 72
+4. GSE15695entrezIDlevel_LBR1.csv map: 72
+5. GSE15695entrezIDlevel_LBR1.csv map: 72
+6. GSE15695entrezIDlevel_LBR1.csv map: 20546
+7. GSE15695entrezIDlevel_LBR1.csv map: 72
+1. HoseentrezIDlevel_LBR1.csv map: 84
+2. HoseentrezIDlevel_LBR1.csv map: 84
+3. HoseentrezIDlevel_LBR1.csv map: 84
+4. HoseentrezIDlevel_LBR1.csv map: 84
+5. HoseentrezIDlevel_LBR1.csv map: 84
+6. HoseentrezIDlevel_LBR1.csv map: 18081
+7. HoseentrezIDlevel_LBR1.csv map: 84
+1. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 95
+2. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 95
+3. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 95
+4. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 95
+5. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 95
+6. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 24821
+7. dfci.2009_entrezID_TPM_hg19_LBR1.csv map: 95
+1. m2gen_entrezID_TPM_hg19_LBR1.csv map: 23
+2. m2gen_entrezID_TPM_hg19_LBR1.csv map: 23
+3. m2gen_entrezID_TPM_hg19_LBR1.csv map: 23
+4. m2gen_entrezID_TPM_hg19_LBR1.csv map: 23
+5. m2gen_entrezID_TPM_hg19_LBR1.csv map: 23
+6. m2gen_entrezID_TPM_hg19_LBR1.csv map: 19321
+7. m2gen_entrezID_TPM_hg19_LBR1.csv map: 23
+Reading anno
+Done reading anno
+Imputed Gender
+Imputing D_Gender for 10 of 274 samples
+ISS: 2, 1, 3, NA
+Imputing D_ISS for 23 of 274 samples
+any(is.na(data)) = FALSE
+Calling predict (probabilities)
+Calling predict (class)
+Warning message:
+In dir.create(output.dir) : './output' already exists
+Successfully wrote predictions.

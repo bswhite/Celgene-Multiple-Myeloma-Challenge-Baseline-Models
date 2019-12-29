@@ -1,0 +1,64 @@
+Warning message:
+package 'data.table' was built under R version 3.3.2 
+Warning message:
+package 'Matrix.utils' was built under R version 3.3.2 
+Warning messages:
+1: package 'caret' was built under R version 3.3.2 
+2: package 'ggplot2' was built under R version 3.3.2 
+R version 3.3.1 (2016-06-21)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: OS X 10.11.6 (El Capitan)
+
+locale:
+[1] C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  base     
+
+other attached packages:
+[1] randomForestSRC_2.4.1 caret_6.0-76          ggplot2_2.2.1        
+[4] lattice_0.20-34       plyr_1.8.4            Matrix.utils_0.9.5   
+[7] Matrix_1.2-7.1        data.table_1.10.0    
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.9        magrittr_1.5       splines_3.3.1      MASS_7.3-45       
+ [5] munsell_0.4.3      colorspace_1.3-2   foreach_1.4.3      minqa_1.2.4       
+ [9] stringr_1.1.0      car_2.1-4          tools_3.3.1        parallel_3.3.1    
+[13] pbkrtest_0.4-6     nnet_7.3-12        grid_3.3.1         gtable_0.2.0      
+[17] nlme_3.1-128       mgcv_1.8-16        quantreg_5.29      MatrixModels_0.4-1
+[21] iterators_1.0.8    lme4_1.1-12        lazyeval_0.2.0     assertthat_0.1    
+[25] tibble_1.2         nloptr_1.0.4       grr_0.9.5          reshape2_1.4.2    
+[29] ModelMetrics_1.1.0 codetools_0.2-15   stringi_1.1.2      methods_3.3.1     
+[33] scales_0.4.1       stats4_3.3.1       SparseM_1.74      
+Welcome brian.white!
+Class of trained.rf = rfsrc
+ Class of trained.rf = grow
+ Class of trained.rf = surv
+.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  240k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  240k  100  240k    0     0   175k      0  0:00:01  0:00:01 --:--:--  175k
+.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  240k  100  240k    0     0   296k      0 --:--:-- --:--:-- --:--:--  296k
+Reading in data.set HoseentrezIDlevel.csv: ./test-data/HoseentrezIDlevel.csv
+Reading in data.set GSE15695entrezIDlevel.csv: ./test-data/GSE15695entrezIDlevel.csv
+Imputed Gender
+Imputing D_Gender for 7 of 462 samples
+ISS: 2, 1, 3, NA
+Imputing D_ISS for 70 of 462 samples
+Imputing D_Age for 6 of 462 samples
+Imputing D_Age for study GSE15695 as median age = 65
+any(is.na(data)) = FALSE
+Calling prediction
+  predictionscore   patient highriskflag
+1     0.004520477 GSM392759         TRUE
+2     0.003310325 GSM392760         TRUE
+3     0.002187979 GSM392761         TRUE
+4     0.002861901 GSM392762         TRUE
+5     0.014101972 GSM392763         TRUE
+6     0.002863119 GSM392764         TRUE
+Warning message:
+In dir.create(output.dir) : './output' already exists
+Successfully wrote predictions.

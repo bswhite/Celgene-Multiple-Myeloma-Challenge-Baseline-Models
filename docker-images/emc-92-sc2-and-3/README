@@ -1,0 +1,27 @@
+## How to build the Docker image
+## docker build -f docker-files/emc-92-sc2-and-3/Dockerfile -t docker.synapse.org/syn7237116/emc-92-sc2-and-sc3:version1 .
+## docker images
+## docker login docker.synapse.org
+## docker push docker.synapse.org/syn7237116/emc-92-sc2-and-sc3:version1
+
+## Train the model for sub-challenge 2, which will create the model
+## state file sc2_model-state-metadata.Rd
+Rscript R/train.R --sc=sc2
+
+## Train the model for sub-challenge 3, which will create the model
+## state file sc3_model-state-metadata.Rd
+Rscript R/train.R --sc=sc3
+
+## Run the SC2 model in Docker (i.e., where Challenge data is assumed
+## to be in ./test-data)
+Rscript R/run.R --sc=sc2
+
+## Run the SC2 model against validation data in Synapse
+Rscript R/run.R --sc=sc2 --challenge-data-table-synId=syn9763945
+
+## Run the SC3 model in Docker (i.e., where Challenge data is assumed
+## to be in ./test-data)
+Rscript R/run.R --sc=sc3
+
+## Run the SC3 model against validation data in Synapse
+Rscript R/run.R --sc=sc3 --challenge-data-table-synId=syn9763945

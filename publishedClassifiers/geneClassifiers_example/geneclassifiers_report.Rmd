@@ -1,0 +1,45 @@
+---
+title: "Example of geneClassifiers package usage"
+author: "Fadi Towfic"
+date: "2/24/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+devtools::install_github('Bioconductor-mirror/geneClassifiers',force=T)
+library(geneClassifiers)
+library(GEOquery)
+library(Biobase)
+source('../uams-70/uams-70.R')
+source('../common/classifier-base.R')
+```
+
+# Overview
+I'll be running the `geneClassifers` package (<https://github.com/Bioconductor-mirror/geneClassifiers>) on the GSE57317
+dataset and comparing its results to the published classifier calls
+
+```{r}
+# Let's get the dataset
+dataset <- suppressWarnings(getGEO(GEO='GSE57317')[[1]])
+
+# Let's get the GEP70 scores from the paper
+gep70.score <- as.numeric(gsub(pattern = 'gep70 score: ',replacement = '',as.character(dataset[['characteristics_ch1.5']])))
+
+dataset.for.geneclassifiers <- setNormalizationMethod(
+  expressionSet = dataset,
+  isLog2Transformed = FALSE,
+  method='MAS5.0',
+  targetValue=2)
+
+uams70 <- runClassifier('UAMS70',dataset.for.geneclassifiers,allow.reweighted=FALSE)
+uams.70.eset(eset = dataset,already.log2.transformed = F)$res[,'raw.score']
+
+mean.geneclassifiers <- mean(abs(uams70@score-gep70.score[match(names(uams70@score),sampleNames(dataset))]))
+
+print(mean.geneclassifiers)
+
+mean.internal <- mean(abs(uams.70.eset(eset = dataset,already.log2.transformed = F)$res[,'raw.score']-gep70.score))
+
+print(mean.internal)
+```

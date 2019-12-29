@@ -1,0 +1,74 @@
+Warning message:
+package 'data.table' was built under R version 3.3.2 
+Warning message:
+package 'Matrix.utils' was built under R version 3.3.2 
+Warning messages:
+1: package 'caret' was built under R version 3.3.2 
+2: package 'ggplot2' was built under R version 3.3.2 
+Please upgrade to the latest version of the Synapse Client, 1.14-3, by running the following commands:
+	source('http://depot.sagebase.org/CRAN.R')
+	pkgInstall("synapseClient")
+
+Here are this version's release notes:
+https://sagebionetworks.jira.com/issues/?jql=project%20%3D%20SYNR%20AND%20fixVersion%20in%20(R-1.14-0%2C%20R-1.14-1%2C%20R-1.14-2%2C%20R-1.14-3)%20ORDER%20BY%20key%20DESC
+
+
+
+Welcome brian.white!
+.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 91  185k   91  169k    0     0   101k      0  0:00:01  0:00:01 --:--:--  101k100  185k  100  185k    0     0   111k      0  0:00:01  0:00:01 --:--:--  111k
+$syn9926865
+An object of class "File"
+Synapse Entity Name : sc2_Validation_ClinAnnotations.csv
+Synapse Entity Id   : syn9926865
+Parent Id     : syn7222262
+Version Number  : 11
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn9773352
+An object of class "File"
+Synapse Entity Name : HoseentrezIDlevel.csv
+Synapse Entity Id   : syn9773352
+Parent Id     : syn9758893
+Version Number  : 1
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn9773354
+An object of class "File"
+Synapse Entity Name : GSE15695entrezIDlevel.csv
+Synapse Entity Id   : syn9773354
+Parent Id     : syn9758895
+Version Number  : 1
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+Reading in data.set HoseentrezIDlevel.csv
+Reading in data.set GSE15695entrezIDlevel.csv
+Warning in pre_process_options(method, column_types) :
+  The following pre-processing methods were eliminated: 'knnImpute', 'center', 'scale'
+Imputed Gender
+Imputing D_Gender for 7 of 462 samples
+ISS: 2, 1, 3, NA
+Imputing D_ISS for 70 of 462 samples
+Imputing D_Age for 6 of 462 samples
+Imputing D_Age for study GSE15695 as median age = 65
+Loading required package: randomForest
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: 'randomForest'
+
+The following object is masked from 'package:ggplot2':
+
+    margin
+
+Warning message:
+In dir.create(output.dir) : './output' already exists
+Successfully wrote predictions.

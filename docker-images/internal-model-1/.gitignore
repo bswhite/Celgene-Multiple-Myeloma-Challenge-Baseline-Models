@@ -1,0 +1,5 @@
+**/*.synapseConfig
+**/*trainingData
+**/*.RDS
+**/*testData
+**/*training-vcf

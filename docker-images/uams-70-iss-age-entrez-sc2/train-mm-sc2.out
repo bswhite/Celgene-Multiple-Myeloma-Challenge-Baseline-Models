@@ -1,0 +1,88 @@
+Warning message:
+package 'data.table' was built under R version 3.3.2 
+Warning message:
+package 'maxstat' was built under R version 3.3.2 
+Warning message:
+package 'Matrix.utils' was built under R version 3.3.2 
+Please upgrade to the latest version of the Synapse Client, 1.17-0, by running the following commands:
+	source('http://depot.sagebase.org/CRAN.R')
+	pkgInstall("synapseClient")
+
+Here are this version's release notes:
+https://sagebionetworks.jira.com/issues/?jql=project%20%3D%20SYNR%20AND%20fixVersion%20%3D%20R-1.17-0%20ORDER%20BY%20key%20ASC%2C%20fixVersion%20ASC
+
+
+
+Welcome brian.white!
+Warning message:
+In dir.create(download.dir) : './download' already exists
+.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 1420k    8  118k    0     0  83726      0  0:00:17  0:00:01  0:00:16 83700100 1420k  100 1420k    0     0   763k      0  0:00:01  0:00:01 --:--:--  763k
+$syn9926877
+An object of class "File"
+Synapse Entity Name : sc2_Training_ClinAnnotations.csv
+Synapse Entity Id   : syn9926877
+Parent Id     : syn7222257
+Version Number  : 75
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn9744847
+An object of class "File"
+Synapse Entity Name : EMTAB4032entrezIDlevel.csv
+Synapse Entity Id   : syn9744847
+Parent Id     : syn9744865
+Version Number  : 1
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn9744851
+An object of class "File"
+Synapse Entity Name : GSE19784HOVON65entrezIDlevel.csv
+Synapse Entity Id   : syn9744851
+Parent Id     : syn9744865
+Version Number  : 1
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn9744853
+An object of class "File"
+Synapse Entity Name : GSE24080UAMSentrezIDlevel.csv
+Synapse Entity Id   : syn9744853
+Parent Id     : syn9744865
+Version Number  : 1
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+$syn10573789
+An object of class "File"
+Synapse Entity Name : MMRF_CoMMpass_IA9_E74GTF_Salmon_entrezID_TPM_hg19.csv
+Synapse Entity Id   : syn10573789
+Parent Id     : syn9744873
+Version Number  : 1
+Version ID   : 
+
+For complete list of annotations, please use the annotations() function.
+
+Reading in data.set EMTAB4032entrezIDlevel.csv
+Reading in data.set GSE19784HOVON65entrezIDlevel.csv
+Reading in data.set GSE24080UAMSentrezIDlevel.csv
+Read 97.5% of 20514 rowsRead 20514 rows and 560 (of 560) columns from 0.181 GB file in 00:00:03
+Reading in data.set MMRF_CoMMpass_IA9_E74GTF_Salmon_entrezID_TPM_hg19.csv
+
+FALSE  TRUE 
+ 1567    53 
+[1] TRUE
+Loading required package: lattice
+Warning message:
+package 'mice' was built under R version 3.3.2 
+Imputing via mice
+
+ iter imp variable
+  1   1  D_Age
